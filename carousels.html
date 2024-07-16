@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>carousels</title>
+        <style>
+            body{
+                width: 100%;
+                display: flex;
+                padding:0px;
+                margin: 0px;
+            }
+            .parent{
+                width: 100%;
+                
+                height: 50svh !important;
+                /* background-color: coral; */
+                display: flex !important;
+                align-items: center;
+                justify-content: space-between !important;
+                position: relative;
+            }
+            .slide{
+                width: 100%;
+                height: 300px !important;
+                background-color: white;
+                display: flex !important;
+                justify-content: space-between !important;
+                align-items: center;
+               
+
+
+            }
+            button{
+                height: fit-content;
+            }
+            .data{
+                width: 80%;
+                height: 90%;
+                background-color: rgb(227, 219, 219);
+                box-shadow: 0 0 15px 2px black ;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                
+            }
+            .child{
+                height:300px !important;
+                display: flex !important;
+                justify-content: space-around !important;
+                align-items: center !important;
+                
+
+            }
+           ul.slick-dots{
+                display: flex;
+                gap: 10px;
+                position: absolute;
+                bottom: -20px;
+                left: 40%;
+            }
+            li button{
+                display: none;
+            }
+         li.slick-active{
+               scale: 1.8;
+            } 
+            .slick-slide {
+            transition: transform 0.5s ease;
+            opacity:0.6;
+        }
+        .slick-current {
+            transform: scale(1.05); 
+            z-index: 2;
+            opacity:1;
+        }
+
+        </style>
+        <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css"/>
+    </head>
+    <body>
+
+        <div class="parent">
+            <!-- <div class="slide"> -->
+                <div class="child"><div class="data"><img src="./imges/Allu-Arjun-1.jpg" alt=""></div></div>
+                <div class="child"><div class="data"><img src="./imges/Chiranjeevi-2.webp" alt=""></div></div>
+                <div class="child"><div class="data"><img src="./imges/junior-ntr-.webp" alt=""></div></div>
+                <div class="child"><div class="data"><img src="./imges/Allu-Arjun-1.jpg" alt=""></div></div>
+                <div class="child"><div class="data"><img src="./imges/Chiranjeevi-2.webp" alt=""></div></div>
+                <div class="child"><div class="data"><img src="./imges/junior-ntr-.webp" alt=""></div></div>
+                <div class="child"><div class="data"><img src="./imges/Allu-Arjun-1.jpg" alt=""></div></div>
+                <div class="child"><div class="data"><img src="./imges/Chiranjeevi-2.webp" alt=""></div></div>
+                <div class="child"><div class="data"><img src="./imges/junior-ntr-.webp" alt=""></div></div>
+                <div class="child"><div class="data"><img src="./imges/Allu-Arjun-1.jpg" alt=""></div></div>
+                <div class="child"><div class="data"><img src="./imges/Chiranjeevi-2.webp" alt=""></div></div>
+                <div class="child"><div class="data"><img src="./imges/junior-ntr-.webp" alt=""></div></div>
+           
+            </div>
+          </div>          
+<script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="./slick-1.8.1/slick/slick.js"></script>
+<script type="text/javascript" src="./slick-1.8.1/slick.jquery.json "></script>
+				
+<script>
+    $('.parent').slick({
+    
+        slidesToShow: 5,
+        slidesToScroll: 1, 
+        dots:true,
+        centerMode:true,
+        autoplay:true,
+        responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+       
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 320,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+]
+});
+
+    
+</script>   
+</body>
+</html>
