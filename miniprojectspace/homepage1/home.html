@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Home Page</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="html" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-7n+aIAD4fb3x0GqorXSkjvXf5oPZaMX2XLj83R9Zx3ffGvgMcff2R4z2PqL8SOsh6BQipIWeW5iDylZ2kHQ7Xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../home_p2/h_pg.css">
+<link rel="stylesheet" href="./support.css">
+
+    <!-- about` -->
+
+    <link rel="stylesheet" href="../aboutpage/practiceabout.css">
+    <link rel="stylesheet" href="../aboutpage/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../aboutpage/slick-1.8.1/slick/slick-theme.css">
+
+
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="container">
+            <div class="head">
+                <!-- Menu button with onclick event -->
+                <div class="menu" onclick="toggleMenu()" aria-label="Toggle Menu">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </div>          
+                <div class="headdum">      
+                    <div class="head1">
+                        AESTHETIC
+                        <div class = "head1arc">ARCHITECTURE</div>
+                    </div><div class="logo"></div><div class="head2">ARCHITECTURE</div>
+                </div>
+                <div class="login" onclick="openSignInPopup()">
+                    SIGN IN
+                </div>
+            </div>
+            
+            <div>
+                <div id="signInPopup" class="popup">
+                    <div class="popup-content">
+                        <span class="close" onclick="closePopup('signInPopup')">&times;</span>
+                        <h2>LOG IN</h2>
+                        <form>
+                            <label for="signInUsername">Username:</label>
+                            <input type="text" id="signInUsername" name="username" required>
+                            <label for="signInPassword">Password:</label>
+                            <input type="password" id="signInPassword" name="password" required>
+                            <button type="submit" class="signinbutton">LOG IN</button>
+                            <p class="signup">Don't have an account? <span class="signup-link" onclick="openSignUpPopup()"><a>Sign up</a></span></p>
+                        </form>
+                    </div>
+                </div>
+        
+            <div id="signUpPopup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup('signUpPopup')">&times;</span>
+                    <h2>SIGN UP</h2>
+                    <form>
+                        <label for="signUpUsername">Username:</label>
+                        <input type="text" id="signUpUsername" name="username" required>
+                        <label for="signUpEmail">Email:</label>
+                        <input type="email" id="signUpEmail" name="email" required>
+                        <label for="signUpPassword">Password:</label>
+                        <input type="password" id="signUpPassword" name="password" required>
+                        <button type="submit"  class="signupbutton">Sign Up</button>
+                        <p class="signin">Already have an account? <span class="signup-link" onclick="openSignInPopup()"><a>LOG IN</a></span></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+            <div class="headbutton" id="headbutton">
+                <div class="hbuttons">HOME</div>
+                <div class="hbuttons"  onclick="handleClick() ">DESIGNS</div>
+                <div class="hbuttons" onclick="aboutus()">ABOUT</div>
+                <div class="hbuttons" onclick="support()">SUPPORT</div>
+                <div class="hbuttons" onclick="reviewspage()">FEEDBACK</div>
+            </div>
+
+
+
+            <div class="hbody">
+                <div class="context">
+                    WE BUILD<br>
+                    YOUR <br>
+                    DREAM HOME <br>
+                </div>
+                <div class="bodyani">
+                    <img src="https://cdn-bnokp.nitrocdn.com/QNoeDwCprhACHQcnEmHgXDhDpbEOlRHH/assets/images/optimized/rev-12bea38/www.decorilla.com/online-decorating/wp-content/uploads/2024/04/Top-interior-design-websites-Decorilla-2048x1148.jpeg" alt="Interior Design 1">
+                    <img src="https://cdn-bnokp.nitrocdn.com/QNoeDwCprhACHQcnEmHgXDhDpbEOlRHH/assets/images/optimized/rev-12bea38/www.decorilla.com/online-decorating/wp-content/uploads/2024/04/One-of-the-best-interior-design-sites-inspiration-for-a-contemporary-home-and-boho-decor-2048x1148.jpeg" alt="Interior Design 2">
+                    <img src="https://cdn-bnokp.nitrocdn.com/QNoeDwCprhACHQcnEmHgXDhDpbEOlRHH/assets/images/optimized/rev-12bea38/www.decorilla.com/online-decorating/wp-content/uploads/2021/06/Bold-maximalist-home-on-one-of-the-top-interior-design-websites-Home-Designing.jpg" alt="Interior Design 3">
+                    <img src="https://cdn-bnokp.nitrocdn.com/QNoeDwCprhACHQcnEmHgXDhDpbEOlRHH/assets/images/optimized/rev-12bea38/www.decorilla.com/online-decorating/wp-content/uploads/2021/06/Home-interior-design-websites-JHID.jpg" alt="Interior Design 4">
+                    <img src="https://cdn-bnokp.nitrocdn.com/QNoeDwCprhACHQcnEmHgXDhDpbEOlRHH/assets/images/optimized/rev-12bea38/www.decorilla.com/online-decorating/wp-content/uploads/2021/06/Feature-interior-on-one-of-the-best-interior-decorating-websites-Design-Milk.jpg" alt="Interior Design 5">
+                </div>    
+            </div>
+            
+
+
+        </div>
+    </div>
+    <!-- Link the JavaScript file -->
+
+
+
+
+    <!-- homepaeg 2 -->
+
+
+
+    <div id="hpg_2">
+        <div id="hpg2_parent">
+            <div id="hpg2_main">
+                <div id="hpg2_heading">
+                    <h1>OUR SERVICES</h1>
+                    <div class="line"></div>
+                </div>
+                <a href="" target="_blank"><div class="shapes"><img src="../home_p2/images_home/shapesgrop - Copy.png" alt=""></div></a>
+                <div id="hpg2_sub">
+                    <div id="hpg2_sub1">
+                        <div id="sub_textbx">
+                            <div id="textbox">
+                                <h1>Living Room Interior</h1>
+                                <p> He wanted to plan a co-working space for multiple prestigious clients. He wanted to plan a co-working space for multiple businesses. We designed his one floor and divided it into 4 small offices by giving false partitions. This Co-Working Space Office Interior is entirely based on a Modern & budget Interior theme. All units of this office have been designed on a similar pattern and theme. We have planned the entire space and provided multiple workstations and a boss table with a partition in each unit. InteriorDesignWala has one of the best office interior designing teams. We have used budget-friendly elements in wall treatments and furniture. The outcome of the 3ds is breathtaking.</p>
+                            </div>
+                        </div>
+                        <div id="sub_imgbx">
+                            <div class="slider-images-shapes">
+                                <div class="slider-images-shapes__item" style="--i: 0s;"></div>
+                                <div class="slider-images-shapes__item" style="--i: 1s;"></div>
+                                <div class="slider-images-shapes__item" style="--i: 2s;"></div>
+                                <div class="slider-images-shapes__item" style="--i: 3s;"></div>
+                                <div class="slider-images-shapes__item" style="--i: 4s;"></div>
+                              </div>
+                              
+                            <img src="../home_p2/images_home/b3 - Copy.jpg" alt="Living Room Interior">
+                        </div>
+
+                    </div>
+                    <div id="hpg2_sub2">
+                        <div id="sub_imgbx">
+                           <a href="" target="_blank"><img src="../home_p2/images_home/l1 - Copy.jpg" alt="Kitchen Interior Design"></a> 
+                        </div>
+                        <div id="sub_textbx">
+                            <div id="textbox">
+                                <h1>Living Room Interior</h1>
+                                <p>Mr. Durga Sai Prasad is one of our prestigious clients. He wanted to plan a co-working space for multiple prestigious clients. He wanted to plan a co-working space for multiple businesses. We designed his one floor and divided it into 4 small offices by giving false partitions. This Co-Working Space Office Interior is entirely based on a Modern & budget Interior theme. All units of this office have been designed on a similar pattern and theme. We have planned the entire space and provided multiple workstations and a boss table with a partition in each unit. InteriorDesignWala has one of the best office interior designing teams. We have used budget-friendly elements in wall treatments and furniture. The outcome of the 3ds is breathtaking.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="hpg2_sub1">
+                        <div id="sub_textbx">
+                            <div id="textbox">
+                                <h1>Kitchen Interior Design</h1>
+                                <p>Transform your personal space into a serene sanctuary with our bespoke bedroom interior design services. At [Your Company Name], we understand that the bedroom is more than just a place to sleep; it's a retreat where you unwind and rejuvenate. Our expert designers are dedicated to crafting elegant and functional bedroom spaces that reflect your personal style and comfort. We start by delving into your preferences, lifestyle, and vision for your bedroom. Whether you envision a minimalist oasis, a cozy retreat, or a luxurious haven, our team listens and adapts to your desires, ensuring every detail is aligned with your dream.</p>
+                            </div>
+                        </div>
+                        <div id="sub_imgbx">
+                            <a href="" target="_blank"><img src="../home_p2/images_home/k1 - Copy.jpg" alt="Another Living Room Interior"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- about page -->
+
+
+    <div id="apg">
+        <div id="apg_r1">
+            <div class="bgapgimg">
+                <img src="../aboutpage/aboutpgbg.webp" alt="World Map">
+                <h1>About us</h1>
+            </div>
+        </div>
+      
+        <div id="cntparent">
+            <div id="cnt_heading"><h3>Performance Highlights</h3></div>
+            <div class="cnt1">
+                
+                <div id="finpro" class="cntop">
+                    <div class="countdown"><h1>+1</h1></div>
+                    <h3>Finished Projects</h3>
+                </div>
+                <div id="newde" class="cntop">
+                    <div class="countdown"><h1>+2</h1></div>
+                    <h3>New Designs</h3>
+                </div>
+            </div>
+            <div class="cnt1">
+                <div id="temem" class="cntop">
+                    <div class="countdown"><h1>+3</h1></div>
+                    <h3>Team Members</h3>
+                </div>
+                <div id="happycli" class="cntop">
+                    <div class="countdown"><h1>+4</h1></div>
+                    <h3>Happy Clients</h3>
+                </div>
+            </div>
+        </div>
+
+     
+              
+        <div class="apg_r3">
+            <div id="apg_r3_heading"><h3>Showcasing Our Team</h3></div>
+            <div class="teammem">
+                <div class="t_chin">
+                    <div class="t_img"><img src="https://www.d-id.com/wp-content/uploads/2023/12/D-ID-portrait_character.png" alt="Blessy"></div>
+                    <div class="t_text">
+                        <div class="textboxslic">
+                            <h2>John</h2>
+                            <p>John is a creative designer with a keen eye for detail. His ability to transform ideas into visually stunning designs has helped elevate our brand's aesthetic. John is dedicated to creating user-centric designs that enhance the overall user experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="t_chin">
+                    <div class="t_img"><img src="https://media.istockphoto.com/id/1587604256/photo/portrait-lawyer-and-black-woman-with-tablet-smile-and-happy-in-office-workplace-african.jpg?s=612x612&w=0&k=20&c=n9yulMNKdIYIQC-Qns8agFj6GBDbiKyPRruaUTh4MKs=" alt="Blessy"></div>
+                    <div class="t_text">
+                        <div class="textboxslic">
+                            <h2>Emma</h2>
+                            <p>Emma is a marketing strategist who excels at crafting compelling campaigns. Her deep understanding of market trends and consumer behavior helps us reach our target audience effectively. Emma's creativity and strategic thinking drive our marketing success.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="t_chin">
+                    <div class="t_img"><img src="https://images.unsplash.com/photo-1592827095305-68f21edefb82?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHByb2ZldGlvbmFsJTIwbWFufGVufDB8fDB8fHww" alt="Blessy"></div>
+                    <div class="t_text">
+                        <div class="textboxslic">
+                            <h2>Michael</h2>
+                            <p>Michael is a data analyst with a passion for turning data into actionable insights. His expertise in data visualization and statistical analysis helps our team make informed decisions. Michael's analytical skills and attention to detail are unparalleled.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="t_chin">
+                    <div class="t_img"><img src="https://t3.ftcdn.net/jpg/01/81/64/60/360_F_181646087_tMjdqi90xyrqFYe6ywM5Mk4aPMZL25Sm.webp" alt="Blessy"></div>
+                    <div class="t_text">
+                        <div class="textboxslic">
+                            <h2>Sarah</h2>
+                            <p>Sarah is our project manager who ensures everything runs smoothly. Her organizational skills and ability to manage multiple projects simultaneously keep us on track. Sarah's leadership and communication skills make her a vital asset to our team.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- support -->
+<div class="header">
+    <h1>Contact Us</h1>
+    <p>Help is just a click away. Call us anytime between 11am - 8pm.</p>
+</div>
+<div class="contact-info">
+    <div class="contact-method">
+        <h2>Email Us</h2>
+        <p><a href="mailto:care@example.com">aestheticarchitects@gmail.com</a></p>
+    </div>
+    <div class="contact-method">
+        <h2>Call Us</h2>
+        <p><a href="tel:18003000920">1800-300-0920</a></p>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Offerings</h3>
+            <ul>
+                <li>Interiors</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Get Inspired</h3>
+            <ul>
+                <li>Design Ideas</li>
+                <li>Magazine</li>
+                <li>TV</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Privacy</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Call us: 1800-300-0920</p>
+            <p>Email us: aestheticarchitects@gmail.com</p>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../aboutpage/slick-1.8.1/slick/slick.js"></script>
+    <script src="../aboutpage/about1.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

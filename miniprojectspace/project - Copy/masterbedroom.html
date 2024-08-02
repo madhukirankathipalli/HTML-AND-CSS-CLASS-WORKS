@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Bedroom</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="masterbedroom.css">
+</head>
+
+<body>
+    <div id="mparent">
+        <div id="mpart1">
+            <div class="mchild">
+                <div class="mpic">
+                    <img src="./images/bedroom/20-1707393169-WgZJj.avif" alt=""
+                        onclick="openModal(this, 'Contemporary')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="mtext">Contemporary Master Bedroom Design With Tufted Bed</div>
+                <div class="size">Size:16 x 20 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="mchild">
+                <div class="mpic">
+                    <img src="./images/bedroom/3d-rendering-modern-luxury-bedroom-suite-bathroom_105762-1945.jpg" alt=""
+                        onclick="openModal(this, 'Modern')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="mtext">Modern Bedroom with Elegant Lighting</div>
+                <div class="size">Size:18 x 15 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="mchild">
+                <div class="mpic">
+                    <img src="./images/bedroom/mbr-243-1719226124-EWtNh.avif" alt=""
+                        onclick="openModal(this, 'Cozy')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="mtext">Cozy Bedroom with Wooden Accents</div>
+                <div class="size">Size:14 x 12 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="mchild">
+                <div class="mpic">
+                    <img src="./images/bedroom/mbr-5-1719487254-VSOV1.avif" alt=""
+                        onclick="openModal(this, 'bed')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="mtext">Cozy Bedroom with Wooden Accents</div>
+                <div class="size">Size:16 x 16 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+        <div id="mpart2">
+            <div class="mchild">
+                <div class="mpic">
+                    <img src="./images/bedroom/mbr10-1704560101-JGebi.avif" alt=""
+                        onclick="openModal(this, 'Luxurious')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="mtext">Luxurious Bedroom with Soft Furnishings</div>
+                <div class="size">Size:14 x 14 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="mchild">
+                <div class="mpic">
+                    <img src="./images/bedroom/mbr10-1712058995-Uw7TO.avif" alt=""
+                        onclick="openModal(this, 'Minimalist')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="mtext">Minimalist Bedroom with Large Windows</div>
+                <div class="size">Size:17 x 14 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="mchild">
+                <div class="mpic">
+                    <img src="./images/bedroom/mbr7-1712055000-c2DPg.avif" alt=""
+                        onclick="openModal(this, 'Chic')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="mtext">Chic Bedroom with Geometric Patterns</div>
+                <div class="size">Size:13 x 10 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="mchild">
+                <div class="mpic">
+                    <img src="./images/bedroom/room-interior-hotel-bedroom_23-2150683419.avif" alt=""
+                        onclick="openModal(this, 'Cozybed')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="mtext">Cozy Bedroom with Wooden Accents</div>
+                <div class="size">Size:12 x 16 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <img id="img01" class="modal-img">
+            <div class="modal-text" id="caption">
+                <p id="modalDescription"></p>
+                <p id="modalDetails"></p>
+                <button id="modalButton" type="button" onclick="orderNow()">Order Now</button>
+            </div>
+            <span class="close" onclick="closeModal()" aria-label="Close Modal">&times;</span>
+        </div>
+    </div>
+    <script src="masterbedroom.js"></script>
+</body>
+</html>

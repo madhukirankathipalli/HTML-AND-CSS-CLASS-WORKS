@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balcony</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="balcony.css"/>
+</head>
+
+<body>
+    <div id="baparent">
+        <div id="bapart1">
+            <div class="bachild">
+                <div class="bapic">
+                    <img src="./images/balcony/1-1-4-1-1-1660722277-3NHPO.avif" alt=""
+                        onclick="openModal(this, 'bacontemporary')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="batext">Modern Balcony Design With Seating Area</div>
+                <div class="size">Size:10 x 12 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="bachild">
+                <div class="bapic">
+                    <img src="./images/balcony/11-1691646656-Q04L1.avif" alt=""
+                        onclick="openModal(this, 'bamodern')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="batext">Modern Balcony Design with White Wall and Stylish Furnishings</div>
+                <div class="size">Size:5 x 9 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="bachild">
+                <div class="bapic">
+                    <img src="./images/balcony/8-1691646662-Ou1EB.avif" alt=""
+                        onclick="openModal(this, 'bacozy')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="batext">Contemporary Balcony Design with  Stylish Furnishings</div>
+                <div class="size">Size:7 x 9 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="bachild">
+                <div class="bapic">
+                    <img src="./images/balcony/bal-01-1655463790-gaI6X.avif" alt=""
+                        onclick="openModal(this, 'babed')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="batext">Spacious Contemporary Style Convenient Balcony Design</div>
+                <div class="size">Size:10 x 8 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+        <div id="bapart2">
+            <div class="bachild">
+                <div class="bapic">
+                    <img src="./images/balcony/bl-3-1691490910-EDJBA.avif" alt=""
+                        onclick="openModal(this, 'baluxurious')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="batext">Modern Balcony Design With Grey Brick Stone Cladding And Grass Mat</div>
+                <div class="size">Size:12 x 8 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="bachild">
+                <div class="bapic">
+                    <img src="./images/balcony/bl1-1690797234-J2z42.avif" alt=""
+                        onclick="openModal(this, 'baminimalist')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="batext">Contemporary Balcony Design with Grey Accent Wall and Vertical Wall Planters</div>
+                <div class="size">Size:13 x 10 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="bachild">
+                <div class="bapic">
+                    <img src="./images/balcony/bl1-1701084785-nKgaY.avif" alt=""
+                        onclick="openModal(this, 'bachic')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="batext">Modern Balcony Design With Vertical Wall Planters</div>
+                <div class="size">Size:8 x 10 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="bachild">
+                <div class="bapic">
+                    <img src="./images/balcony/bl5-1701084780-Losmu.avif" alt=""
+                        onclick="openModal(this, 'bacozybed')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="batext">Coastal Balcony Design With Stone Cladding Wall</div>
+                <div class="size">Size:12 x 16 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <img id="img01" class="modal-img">
+            <div class="modal-text" id="caption">
+                <p id="modalDescription"></p>
+                <p id="modalDetails"></p>
+                <button id="modalButton" type="button" onclick="orderNow()">Order Now</button>
+            </div>
+            <span class="close" onclick="closeModal()" aria-label="Close Modal">&times;</span>
+        </div>
+    </div>
+    <script src="balcony.js"></script>
+</body>
+
+</html>

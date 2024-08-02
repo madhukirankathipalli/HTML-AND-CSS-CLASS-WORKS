@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Bedroom</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="guestbedroom.css"/>
+</head>
+<body>
+    <div id="gparent">
+        <div id="gpart1">
+            <div class="gchild">
+                <div class="gpic">
+                    <img src="./images/guest bedroom/gb-2-1710352053-2ZvMi.avif" alt=""
+                        onclick="openModal(this, 'gcontemporary')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="gtext">Contemporary Guest Bedroom Design With Dark Brown Accent</div>
+                <div class="gsize">Size:12 x 12 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="gchild">
+                <div class="gpic">
+                    <img src="./images/guest bedroom/gb11-1715851432-sz1nr.avif" alt=""
+                        onclick="openModal(this, 'gmodern')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="gtext">Modern Guest Bedroom with Classic Design</div>
+                <div class="gsize">Size:18 x 15 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="gchild">
+                <div class="gpic">
+                    <img src="./images/guest bedroom/gbr-261-1719226103-BU4oR.avif" alt=""
+                        onclick="openModal(this, 'Cgcozy')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="gtext">Minimalist Guest Bedroom Design With Queen Storage Bed</div>
+                <div class="gsize">Size:14 x 12 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="gchild">
+                <div class="gpic">
+                    <img src="./images/guest bedroom/gbr13-1697610746-AG8va.avif" alt=""
+                        onclick="openModal(this, 'gbed')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="gtext">Cozy Guest Bedroom with Wooden Accents</div>
+                <div class="gsize">Size:16 x 16 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+        <div id="gpart2">
+            <div class="gchild">
+                <div class="gpic">
+                    <img src="./images/guest bedroom/gbr20-1700569634-pfDxX.avif" alt=""
+                        onclick="openModal(this, 'glux')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="gtext">Luxurious Guest Bedroom with Soft Furnishings</div>
+                <div class="gsize">Size:14 x 14 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="gchild">
+                <div class="gpic">
+                    <img src="./images/guest bedroom/gbr21-1710755277-LzflY.avif" alt=""
+                        onclick="openModal(this, 'gmin')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="gtext">Modern Guest Bedroom Design With Grey Bed Marble Accent Wall</div>
+                <div class="gsize">Size:14 x 14 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="gchild">
+                <div class="gpic">
+                    <img src="./images/guest bedroom/gbr3-1704963832-1FTXA.avif" alt=""
+                        onclick="openModal(this, 'gchic')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="gtext">Modern Guest Room Design With Tropical Inspired Leafy Wallpaper</div>
+                <div class="gsize">Size:13 x 10 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="gchild">
+                <div class="gpic">
+                    <img src="./images/guest bedroom/guest-bedroom-223-1716204125-TY4Fm.avif" alt=""
+                        onclick="openModal(this, 'gcozybed')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="gtext">Modern Guest Room Design With Elegant Grey Damask Wallpaper</div>
+                <div class="gsize">Size:12 x 10 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <img id="img01" class="modal-img">
+            <div class="modal-text" id="caption">
+                <p id="modalDescription"></p>
+                <p id="modalDetails"></p>
+                <button id="modalButton" type="button" onclick="orderNow()">Order Now</button>
+            </div>
+            <span class="close" onclick="closeModal()" aria-label="Close Modal">&times;</span>
+        </div>
+    </div>
+    <script src="guestbedroom.js"></script>
+</body>
+
+</html>

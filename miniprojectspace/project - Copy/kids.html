@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Bedroom</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="kidbedroom.css"/>
+</head>
+
+<body>
+    <div id="kiparent">
+        <div id="kipart">
+            <div class="kichild">
+                <div class="mpic">
+                    <img src="./images/kids bedroom/23-1702277825-kEbbs.avif" alt=""
+                        onclick="openModal(this, 'Contemporary Master Bedroom Design With Tufted Bed')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="mtext">Modern Kids Bedroom With Single Bedroom </div>
+                <div class="size">Size:12 x 10 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="kichild">
+                <div class="mpic">
+                    <img src="./images/kids bedroom/d24ec2e53c1d0319c4e4d321b117ab8b.jpg" alt=""
+                        onclick="openModal(this, 'Modern Bedroom with Elegant Lighting')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="mtext">Modern Bedroom with Elegant Lighting</div>
+                <div class="size">Size:18 x 15 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="kichild">
+                <div class="mpic">
+                    <img src="./images/kids bedroom/kb7-1716274958-RVxRa.avif" alt=""
+                        onclick="openModal(this, 'Cozy Bedroom with Wooden Accents')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="mtext">Cozy Bedroom with Wooden Accents</div>
+                <div class="size">Size:14 x 12 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="kichild">
+                <div class="mpic">
+                    <img src="./images/kids bedroom/kbr-187-1715947491-0QFsl.avif" alt=""
+                        onclick="openModal(this, 'Cozy Bedroom with Wooden Accent')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="mtext">Beach Theme Contemporary Kids Bedroom Design With Two Single Beds</div>
+                <div class="size">Size:12 x 16 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+        <div id="mpart2">
+            <div class="kichild">
+                <div class="mpic">
+                    <img src="./images/kids bedroom/kbr-249-1719226118-wYHCC.avif" alt=""
+                        onclick="openModal(this, 'Luxurious Bedroom with Soft Furnishings')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="mtext">Modern Kids Bedroom Design With Twin Beds and Swing Wardrobe</div>
+                <div class="size">Size:16 x 12 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="kichild">
+                <div class="mpic">
+                    <img src="./images/kids bedroom/kbr10-1716274948-OyHzO.avif" alt=""
+                        onclick="openModal(this, 'Minimalist Bedroom with Large Windows')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="mtext">Modern Kids Bedroom Design With Shared Bunk Bed With Storage</div>
+                <div class="size">Size:13 x 12 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="kichild">
+                <div class="mpic">
+                    <img src="./images/kids bedroom/kbr21-1-1697606272-WNWeX.avif" alt=""
+                        onclick="openModal(this, 'Chic Bedroom with Geometric Patterns')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="mtext">A Contemporary Kids Bedroom Design with Classic design</div>
+                <div class="size">Size:13 x 10 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="kichild">
+                <div class="mpic">
+                    <img src="./images/kids bedroom/OIP.jpeg" alt=""
+                        onclick="openModal(this, 'Cozy Bedroom with Wooden')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="mtext">Cozy Bedroom with Wooden Accents</div>
+                <div class="size">Size:12 x 16 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <img id="img01" class="modal-img">
+            <div class="modal-text" id="caption">
+                <p id="modalDescription"></p>
+                <p id="modalDetails"></p>
+                <button id="modalButton" type="button" onclick="orderNow()">Order Now</button>
+                <span class="close" onclick="closeModal()" aria-label="Close Modal">&times;</span>
+            </div>
+            
+        </div>
+    </div>
+    <script src="kidsbedroom.js"></script>
+  </body>
+</html>

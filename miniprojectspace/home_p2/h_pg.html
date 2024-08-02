@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="h_pg.css">
+</head>
+<body>
+    <div id="hpg_2">
+        <div id="hpg2_parent">
+            <div id="hpg2_main">
+                <div id="hpg2_heading">
+                    <h1>OUR SERVICES</h1>
+                    <div class="line"></div>
+                </div>
+                <a href="" target="_blank"><div class="shapes"><img src="./images/shapesgrop.png" alt=""></div></a>
+                <div id="hpg2_sub">
+                    <div id="hpg2_sub1">
+                        <div id="sub_textbx">
+                            <div id="textbox">
+                                <h1>Living Room Interior</h1>
+                                <p> He wanted to plan a co-working space for multiple prestigious clients. He wanted to plan a co-working space for multiple businesses. We designed his one floor and divided it into 4 small offices by giving false partitions. This Co-Working Space Office Interior is entirely based on a Modern & budget Interior theme. All units of this office have been designed on a similar pattern and theme. We have planned the entire space and provided multiple workstations and a boss table with a partition in each unit. InteriorDesignWala has one of the best office interior designing teams. We have used budget-friendly elements in wall treatments and furniture. The outcome of the 3ds is breathtaking.</p>
+                            </div>
+                        </div>
+                        <div id="sub_imgbx">
+                            <div class="slider-images-shapes">
+                                <div class="slider-images-shapes__item" style="--i: 0s;"></div>
+                                <div class="slider-images-shapes__item" style="--i: 1s;"></div>
+                                <div class="slider-images-shapes__item" style="--i: 2s;"></div>
+                                <div class="slider-images-shapes__item" style="--i: 3s;"></div>
+                                <div class="slider-images-shapes__item" style="--i: 4s;"></div>
+                              </div>
+                              
+                            <img src="./images/l1.jpg" alt="Living Room Interior">
+                        </div>
+                    </div>
+                    <div id="hpg2_sub2">
+                        <div id="sub_imgbx">
+                           <a href="" target="_blank"><img src="./images/b3.jpg" alt="Kitchen Interior Design"></a> 
+                        </div>
+                        <div id="sub_textbx">
+                            <div id="textbox">
+                                <h1>Living Room Interior</h1>
+                                <p>Mr. Durga Sai Prasad is one of our prestigious clients. He wanted to plan a co-working space for multiple prestigious clients. He wanted to plan a co-working space for multiple businesses. We designed his one floor and divided it into 4 small offices by giving false partitions. This Co-Working Space Office Interior is entirely based on a Modern & budget Interior theme. All units of this office have been designed on a similar pattern and theme. We have planned the entire space and provided multiple workstations and a boss table with a partition in each unit. InteriorDesignWala has one of the best office interior designing teams. We have used budget-friendly elements in wall treatments and furniture. The outcome of the 3ds is breathtaking.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="hpg2_sub1">
+                        <div id="sub_textbx">
+                            <div id="textbox">
+                                <h1>Kitchen Interior Design</h1>
+                                <p>Transform your personal space into a serene sanctuary with our bespoke bedroom interior design services. At [Your Company Name], we understand that the bedroom is more than just a place to sleep; it's a retreat where you unwind and rejuvenate. Our expert designers are dedicated to crafting elegant and functional bedroom spaces that reflect your personal style and comfort. We start by delving into your preferences, lifestyle, and vision for your bedroom. Whether you envision a minimalist oasis, a cozy retreat, or a luxurious haven, our team listens and adapts to your desires, ensuring every detail is aligned with your dream.</p>
+                            </div>
+                        </div>
+                        <div id="sub_imgbx">
+                            <a href="" target="_blank"><img src="./images/k1.jpg" alt="Another Living Room Interior"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+       document.addEventListener('DOMContentLoaded', () => {
+    const parent = document.getElementById('hpg2_parent');
+    const shapes = document.querySelector('.shapes');
+
+    // Intersection Observer for animating on view
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                parent.classList.add('animate-once');
+            } else {
+                parent.classList.remove('animate-once');
+            }
+        });
+    });
+
+    observer.observe(parent);
+
+    // Function for animating shapes on mouse move
+    function handleMouseMove() {
+        shapes.classList.add('active');
+
+        clearTimeout(shapes.timeout);
+        shapes.timeout = setTimeout(() => {
+            shapes.classList.remove('active');
+        }, 5000);
+    }
+
+    document.addEventListener('mousemove', handleMouseMove);
+});
+
+    </script>
+</body>
+</html>

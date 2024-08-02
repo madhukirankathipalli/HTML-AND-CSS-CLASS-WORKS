@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclectic living room</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="eclestic.css"/>
+</head>
+
+<body>
+    <div id="ecparent">
+        <div id="ecpart1">
+            <div class="ecchild">
+                <div class="ecpic">
+                    <img src="./Iship imgs/Ec1.jpg" alt=""
+                        onclick="openModal(this, 'Basic eclectic design')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="ectext">Basic eclectic design</div>
+                <div class="size"> Size:16 x 20 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="ecchild">
+                <div class="ecpic">
+                    <img src="./Iship imgs/Ec2.jpg" alt=""
+                        onclick="openModal(this, 'Sophisticated')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="ectext">Sophisticated eclectic living room</div>
+                <div class="size">Size:18 x 15 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="ecchild">
+                <div class="ecpic">
+                    <img src="./Iship imgs/Ec3.jpg" alt=""
+                        onclick="openModal(this, 'Room decor')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="ectext">Decorated eclectic living room</div>
+                <div class="size">Size:14 x 12 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="ecchild">
+                <div class="ecpic">
+                    <img src="./Iship imgs/Ec4.jpg" alt=""
+                        onclick="openModal(this, 'Industrial')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="ectext">Industrial eclectic living room</div>
+                <div class="size">Size:13 x 13 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+        <div id="ecpart2">
+            <div class="ecchild">
+                <div class="ecpic">
+                    <img src="./Iship imgs/Ec5.jpg" alt=""
+                        onclick="openModal(this, 'Colourful')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="ectext">Colourful Eclectic Living Room Decor</div>
+                <div class="size">Size:18 x 14 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="ecchild">
+                <div class="ecpic">
+                    <img src="./Iship imgs/Ec6.jpg" alt=""
+                        onclick="openModal(this, 'Cozy')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="ectext">Cozy eclectic living room</div>
+                <div class="size">Size:20 x 20 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="ecchild">
+                <div class="ecpic">
+                    <img src="./Iship imgs/Ec7.jpg" alt=""
+                        onclick="openModal(this, 'Impressive')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="ectext">Impressive eclectic living room</div>
+                <div class="size">Size:12 x 16 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="ecchild">
+                <div class="ecpic">
+                    <img src="./Iship imgs/Ec8.jpeg" alt=""
+                        onclick="openModal(this, 'Classic')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="ectext">Classic eclectic living room</div>
+                <div class="size">Size:12 x 16 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <img id="img01" class="modal-img">
+            <div class="modal-text" id="caption">
+                <p id="modalDescription"></p>
+                <p id="modalDetails"></p>
+                <button id="modalButton" type="button" onclick="orderNow()">Order Now</button>
+            </div>
+            <span class="close" onclick="closeModal()" aria-label="Close Modal">&times;</span>
+        </div>
+    </div>
+    <script src="eclestic.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian style living room</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="indianliving.css"/>
+</head>
+
+<body>
+    <div id="ilparent">
+        <div id="ilpart1">
+            <div class="ilchild">
+                <div class="ilpic">
+                    <img src="./Iship imgs/Indian2.jpg" alt=""
+                        onclick="openModal(this, 'Basic indian')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="iltext">Basic indian style living room</div>
+                <div class="size"> Size:16 x 20 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="ilchild">
+                <div class="ilpic">
+                    <img src="./Iship imgs/Inliving3.jpg" alt=""
+                        onclick="openModal(this, 'Aesthetic indian living room')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="iltext">Aesthetic indian living room</div>
+                <div class="size">Size:18 x 15 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="ilchild">
+                <div class="ilpic">
+                    <img src="./Iship imgs/Inclassic.jpg" alt=""
+                        onclick="openModal(this, 'Classic indian style living room')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="iltext">Classic indian style living room</div>
+                <div class="size">Size:14 x 12 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="ilchild">
+                <div class="ilpic">
+                    <img src="./Iship imgs/Inculiving.jpg" alt=""
+                        onclick="openModal(this, 'Cultural style living room')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="iltext">Cultural style living room</div>
+                <div class="size">Size:13 x 13 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+        <div id="ilpart2">
+            <div class="ilchild">
+                <div class="ilpic">
+                    <img src="./Iship imgs/Inliving7.jpg" alt=""
+                        onclick="openModal(this, 'Indian living room')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="iltext">Minimalist Indian living room</div>
+                <div class="size">Size:18 x 14 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="ilchild">
+                <div class="ilpic">
+                    <img src="./Iship imgs/Intradlivin4.jpg" alt=""
+                        onclick="openModal(this, 'Traditional style living room')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="iltext">The Traditional Wooden Swing</div>
+                <div class="size">Size:20 x 20 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="ilchild">
+                <div class="ilpic">
+                    <img src="./Iship imgs/Inlowheightlivin5.jpg" alt=""
+                        onclick="openModal(this, 'Low-Height Seating living room')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="iltext">Low-Height Seating living room</div>
+                <div class="size">Size:12 x 16 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="ilchild">
+                <div class="ilpic">
+                    <img src="./Iship imgs/Inliving8.jpg" alt=""
+                        onclick="openModal(this, 'Indian folk living room')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="iltext">Indian folk art living room design</div>
+                <div class="size">Size:12 x 16 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <img id="img01" class="modal-img">
+            <div class="modal-text" id="caption">
+                <p id="modalDescription"></p>
+                <p id="modalDetails"></p>
+                <button id="modalButton" type="button" onclick="orderNow()">Order Now</button>
+            </div>
+            <span class="close" onclick="closeModal()" aria-label="Close Modal">&times;</span>
+        </div>
+    </div>
+        <script src="indianliving.js"></script>
+</body>
+
+</html>

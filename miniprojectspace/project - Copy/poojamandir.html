@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooja Mandir</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="poojamandir.css"/>
+</head>
+<body>
+    <div id="maparent">
+        <div id="mapart1">
+            <div class="machild">
+                <div class="mapic">
+                    <img src="./images/pooja mandir/001-14-1669008201-abkR0.avif" alt=""
+                        onclick="openModal(this, 'macontemprary')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="matext">Indian Traditional Mandir Design With Wooden Finish</div>
+                <div class="size">Size:6x7 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="machild">
+                <div class="mapic">
+                    <img src="./images/pooja mandir/19-1703442887-2e1o0.avif" alt=""
+                        onclick="openModal(this, 'mamodern')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="matext">Modern Mandir Unit Design With LED Wall And Lotus Motifs</div>
+                <div class="size">Size:5x8 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="machild">
+                <div class="mapic">
+                    <img src="./images/pooja mandir/4-1710935532-KkaO9.avif" alt=""
+                        onclick="openModal(this, 'macoz')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="matext">Contemporary Wooden Mandir Design With Textured Grey Accent</div>
+                <div class="size">Size:10x12 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="machild">
+                <div class="mapic">
+                    <img src="./images/pooja mandir/pooja-room-126-1715947572-m9NED.avif" alt=""
+                        onclick="openModal(this, 'mabed')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="matext">Modern Wooden Mandir Design With Beige Damask Wallpaper</div>
+                <div class="size">Size:6x5 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+        <div id="mapart2">
+            <div class="machild">
+                <div class="mapic">
+                    <img src="./images/pooja mandir/pooja-room-133-1715947563-MWrNy.avif" alt=""
+                        onclick="openModal(this, 'maluxurious')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="matext">Traditional Mandir Design With Grey Stone Cladding, Granite Console</div>
+                <div class="size">Size:15x9 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="machild">
+                <div class="mapic">
+                    <img src="./images/pooja mandir/pooja-view-6-1-1-1675624412-zCEVj.avif" alt=""
+                        onclick="openModal(this, 'maminimalist')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="matext">Floor Mounted Modern Pooja Mandir Design With A CNC Pattern</div>
+                <div class="size">Size:6x6 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="machild">
+                <div class="mapic">
+                    <img src="./images/pooja mandir/pr10-1716793794-TRzBR.avif" alt=""
+                        onclick="openModal(this, 'machic')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="matext">Modern Mandir Design With Floor Mounted Storage Units And Wall Mounted Shelves</div>
+                <div class="size">Size:8x9 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="machild">
+                <div class="mapic">
+                    <img src="./images/pooja mandir/pr2-1713173464-ubyJI.avif" alt=""
+                        onclick="openModal(this, 'macozybed')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="matext">Modern All White Mandir Design With Om Mandala And Ornate Door</div>
+                <div class="size">Size:5x4 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <img id="img01" class="modal-img">
+            <div class="modal-text" id="caption">
+                <p id="modalDescription"></p>
+                <p id="modalDetails"></p>
+                <button id="modalButton" type="button" onclick="orderNow()">Order Now</button>
+            </div>
+            <span class="close" onclick="closeModal()" aria-label="Close Modal">&times;</span>
+        </div>
+    </div>
+    <script src="poojamandir.js"></script>
+</body>
+
+</html>

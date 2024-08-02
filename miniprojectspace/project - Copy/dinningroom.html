@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinning Room</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="dinningroom.css"/>
+</head>
+
+<body>
+    <div id="dparent">
+        <div id="dpart1">
+            <div class="dchild">
+                <div class="dpic">
+                    <img src="./images/dinningroom/10-1711111561-cOxUI.avif" alt=""
+                        onclick="openModal(this, 'dcon')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="dtext">Contemporary 4 Seater Round Dining Room Design With Pastel Blue Chairs</div>
+                <div class="size">Size:7 x 7 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="dchild">
+                <div class="dpic">
+                    <img src="./images/dinningroom/7-1712906390-TDROV.avif" alt=""
+                        onclick="openModal(this, 'dmod')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="dtext">Modern Beige 6 Seater Dining Room Design With White Storage Unit</div>
+                <div class="size">Size:12 x 16 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="dchild">
+                <div class="dpic">
+                    <img src="./images/dinningroom/dining-room-316-1719226037-PCLaA.avif" alt=""
+                        onclick="openModal(this, 'dcozy')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="dtext">Blue and Wood Contemporary Dining Room Design With 6 Seater Dining</div>
+                <div class="size">Size:12 x 18 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="dchild">
+                <div class="dpic">
+                    <img src="./images/dinningroom/dr-18-1716275356-qWwMD.avif" alt=""
+                        onclick="openModal(this, 'dbed')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="dtext">Modern White And Brown 6 Seater Dining Room Design</div>
+                <div class="size">Size:15 x 12 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+        <div id="mpart2">
+            <div class="dchild">
+                <div class="dpic">
+                    <img src="./images/dinningroom/dr24-1702450312-b9gzq.avif" alt=""
+                        onclick="openModal(this, 'dlux')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="dtext">Contemporary Dining Room Design With White Crockery Unit</div>
+                <div class="size">Size:14 x 14 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="dchild">
+                <div class="dpic">
+                    <img src="./images/dinningroom/dr-9-1707297632-ZQT6c.avif" alt=""
+                        onclick="openModal(this, 'dmin')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="dtext">6-seater white and beige dining table with wooden legs</div>
+                <div class="size">Size:13 x 11 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="dchild">
+                <div class="dpic">
+                    <img src="./images/dinningroom/dr12-1715853646-c2mMg.avif" alt=""
+                        onclick="openModal(this, 'dchic')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="dtext">Contemporary Teal And Gold 6 Seater Dining Room Design
+                </div>
+                <div class="size">Size:14 x 12 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="dchild">
+                <div class="dpic">
+                    <img src="./images/dinningroom/l-24-1710154488-ZIOKM.avif" alt=""
+                        onclick="openModal(this, 'dc')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="dtext">Contemporary White And Beige 6 Seater Dining Room Design With Bevelled Mirror Accent Wall</div>
+                <div class="size">Size:15 x 13 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <img id="img01" class="modal-img">
+            <div class="modal-text" id="caption">
+                <p id="modalDescription"></p>
+                <p id="modalDetails"></p>
+                <button id="modalButton" type="button" onclick="orderNow()">Order Now</button>
+            </div>
+            <span class="close" onclick="closeModal()" aria-label="Close Modal">&times;</span>
+        </div>
+    </div>
+    <script src="dinningroom.js"></script>
+</body>
+
+</html>

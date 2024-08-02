@@ -1,0 +1,458 @@
+body {
+    background-color: #171717;
+    margin: 0px;
+}
+
+.apg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#apg_r1 {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden; /* Ensure no overflow issues */
+}
+
+.bgapgimg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden; /* Ensure no overflow issues */
+}
+
+.bgapgimg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #171717);
+    z-index: 1;
+}
+
+.bgapgimg img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: transform 1s ease; /* Smooth transition */
+}
+
+.bgapgimg h1 {
+    position: absolute;
+    font-size: 5rem;
+    font-weight: 900;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bgapgimg h1:hover {
+    color: white;
+    text-shadow: 
+        -1px -1px 0 rgb(0, 0, 0),  
+         1px -1px 0 rgb(0, 0, 0),
+        -1px  1px 0 rgb(0, 0, 0),
+         1px  1px 0 rgb(0, 0, 0);
+}
+
+/* backgound image  */
+
+.apg_r2{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* team slick  */
+.teammem {
+    width: 87%;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.t_chin {
+    width: 300%; 
+    height: 500px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    overflow: hidden; 
+}
+
+.t_img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.t_img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: 0 0 5px 1px rgb(92, 85, 85);
+    object-fit: cover; /* Ensures image does not stretch */
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.t_text {
+    width: 100%;
+    color: rgb(185, 185, 178);
+    height: 50%;
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease; /* Smooth transition */
+}
+
+.textboxslic {
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.t_text p {
+    text-align: justify;
+}
+
+.t_text h2 {
+    color: rgb(184, 184, 176);
+    font-size: 32px;
+    text-align: center;
+}
+
+.apg_r3 {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#apg_r3_heading {
+    width: 100%;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: blanchedalmond;
+    font-size: 24px;
+}
+
+
+
+/* Smooth animation for slick slides */
+.slick-slide {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0.5;
+    overflow: hidden; /* Ensure no overflow issues */
+    transform: scale(0.95); /* Slightly scale down inactive slides */
+}
+
+.slick-current {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    margin-top: 10px;
+    transform: scale(1.05); 
+    z-index: 2;
+    opacity: 1;
+}
+
+li.slick-active img {
+    padding-top: 10px;
+    margin-top: 10px;
+    opacity: 1;
+    transform: scale(1); /* Ensure active slide images are fully scaled */
+}
+
+.slick-slide img {
+    margin-top: 10px;
+    object-fit: cover; /* Ensures images fit well within the slide */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition for images */
+}
+
+/* Dots styling */
+.slick-dots {
+    display: flex !important;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.slick-dots li button:before {
+    font-size: 10px;
+    color: white !important;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+    color: white !important;
+    opacity: 1;
+    font-size: 14px; 
+}
+
+.slick-slide {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0.2;
+    overflow: hidden; /* Ensure no overflow issues */
+}
+
+.slick-current {
+    transition: all 1s ease;
+    margin-top: 10px;
+    transform: scale(1.05); 
+    z-index: 2;
+    opacity: 1;
+}
+
+li.slick-active img {
+    padding-top: 10px;
+    margin-top: 10px;
+    opacity: 1;
+}
+
+.slick-slide img {
+    margin-top: 10px;
+    object-fit: cover; /* Ensures images fit well within the slide */
+}
+
+/* Dots styling */
+.slick-dots {
+    display: flex !important;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.slick-dots li button:before {
+    font-size: 10px;
+    color: white !important;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+    color: white !important;
+    opacity: 1;
+    font-size: 14px; 
+}
+
+/* counting css */
+#cnt_heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: blanchedalmond;
+    font-size: 22px;
+}
+
+#cntparent {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+
+.countdown h1 {
+    margin: 30px 0px;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.cntparent h1 {
+    font-size: 32px;
+}
+
+.cntop h3 {
+    margin-top: 20px;
+    color: rgb(121, 121, 121);
+}
+
+.cnt1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cntop {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-images-shapes {
+    height: 100%;
+    left: -5px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100px;
+}
+
+
+
+
+
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    #apg_r1 {
+        height: 70vh;
+    }
+
+    .bgapgimg h1 {
+        font-size: 4rem;
+    }
+
+    .t_chin {
+        height: 250px;
+    }
+
+    .t_img img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .textboxslic {
+        width: 90%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #apg_r1 {
+        height: 60vh;
+    }
+
+    .bgapgimg h1 {
+        font-size: 3.5rem;
+    }
+
+    .t_chin {
+        height: 300px; 
+    }
+
+    .t_img img {
+        width: 125px;
+        height: 125px;
+    }
+
+    .textboxslic {
+        width: 85%;
+    }
+}
+
+@media (max-width: 600px) {
+    #apg_r1 {
+        height: 50vh;
+    }
+    .bgapgimg h1 {
+        font-size: 3rem;
+    }
+
+    .t_chin {
+        height: 100%
+    }
+
+    .t_img {
+        width: 100%;
+        height:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .t_img img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .textboxslic {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #cntparent{
+        margin-top: 10px;
+    }
+    #cnt_heading h3{
+        margin: 50px 0px;
+        
+        font-size: 18px;
+    }
+    .countdown h1{
+        font-size: 22px ;
+        margin: 20px 0px;
+    }
+    .cntop h3{
+        font-size: 18px ;
+        margin-top: 1px;
+    }
+    .bgapgimg h1 {
+        font-size: 2.5rem;
+    }
+
+    .t_chin {
+    }
+
+    .t_img {
+        width: 100%;
+        height:70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .t_img img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .textboxslic {
+        width: 95%;
+    }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Bedroom</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="singlebedroom.css"/>
+</head>
+
+<body>
+    <div id="sparent">
+        <div id="spart1">
+            <div class="schild">
+                <div class="spic">
+                    <img src="./images/singlebedroom/20-Small-Bedroom-Ideas-That-Will-Leave-You-Speechless-featured-on-Architecture-Beast-25.jpg" alt=""
+                        onclick="openModal(this, 'scontemporary')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="stext">Contemporary Single Bedroom Design With Tufted Bed</div>
+                <div class="size">Size:10 x 10 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="schild">
+                <div class="spic">
+                    <img src="./images/singlebedroom/2cac25039b46311ec6f2080983b458f5.jpg" alt=""
+                        onclick="openModal(this, 'smodern')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="stext">Modern Single Bedroom with Classic Design</div>
+                <div class="size">Size:8 x 15 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="schild">
+                <div class="spic">
+                    <img src="./images/singlebedroom/download.jpeg" alt=""
+                        onclick="openModal(this, 'scozy')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="stext">Cozy Single Bedroom with Wooden Accents</div>
+                <div class="size">Size:10 x 12 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="schild">
+                <div class="spic">
+                    <img src="./images/singlebedroom/GRO_74438_HTL_anabel_0117_01.jpg" alt=""
+                        onclick="openModal(this, 'sbed')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="stext">Contemporary SIngle Bedroom with Wooden Accents</div>
+                <div class="size">Size:10 x 10 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+        <div id="spart2">
+            <div class="schild">
+                <div class="spic">
+                    <img src="./images/singlebedroom/maxresdefault.jpg" alt=""
+                        onclick="openModal(this, 'sluxurious')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="stext">Luxurious Single Bedroom with Soft Furnishings</div>
+                <div class="size">Size:12 x 14 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="schild">
+                <div class="spic">
+                    <img src="./images/singlebedroom/OIP.jpeg" alt=""
+                        onclick="openModal(this, 'sminimalist')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="stext">Minimalist Single Bedroom with Large Windows</div>
+                <div class="size">Size:10 x 14 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="schild">
+                <div class="spic">
+                    <img src="./images/singlebedroom/R (1).jpeg" alt=""
+                        onclick="openModal(this, 'schic')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="stext">Chic Single Bedroom with Soft Furnishings</div>
+                <div class="size">Size:13 x 10 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="schild">
+                <div class="spic">
+                    <img src="./images/singlebedroom/R.jpeg" alt=""
+                        onclick="openModal(this, 'scozy')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="stext">Cozy Single Bedroom with Wooden Accents</div>
+                <div class="size">Size:12 x 16 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="smyModal" class="modal">
+        <div class="modal-content">
+            <img id="img01" class="modal-img">
+            <div class="modal-text" id="caption">
+                <p id="modalDescription"></p>
+                <p id="modalDetails"></p>
+                <button id="modalButton" type="button" onclick="orderNow()">Order Now</button>
+            </div>
+            <span class="close" onclick="closeModal()" aria-label="Close Modal">&times;</span>
+        </div>
+    </div>
+    <script src="singlebedroom.js"></script>
+</body>
+
+</html>

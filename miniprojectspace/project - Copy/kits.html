@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Island Modular Kitchen</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="kits.css"/>
+</head>
+
+<body>
+    <div id="kiparent">
+        <div id="kipart1">
+            <div class="kichild">
+                <div class="kipic">
+                    <img src="./Iship imgs/Ikit1.jpg" alt=""
+                        onclick="openModal(this, 'Basic')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="kitext">Basic Island Kitchen</div>
+                <div class="size"> Size:16 x 20 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="kichild">
+                <div class="kipic">
+                    <img src="./Iship imgs/Ikit2.jpg" alt=""
+                        onclick="openModal(this, 'Simply designed island kitchen')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="kitext">Laminated island kitchen</div>
+                <div class="size">Size:18 x 15 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="kichild">
+                <div class="kipic">
+                    <img src="./Iship imgs/Ikit3.jpg" alt=""
+                        onclick="openModal(this, 'Elegant island kitchen')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="kitext">Elegant island kitchen</div>
+                <div class="size">Size:14 x 12 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="kichild">
+                <div class="kipic">
+                    <img src="./Iship imgs/Ikit4.jpg" alt=""
+                        onclick="openModal(this, 'Simple island kitchen')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="kitext">Simple island kitchen</div>
+                <div class="size">Size:13 x 13 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+        <div id="kipart2">
+            <div class="kichild">
+                <div class="kipic">
+                    <img src="./Iship imgs/Ikit5.jpg" alt=""
+                        onclick="openModal(this, 'Luxurious island kitchen')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="kitext">Luxurious Island Kitchen</div>
+                <div class="size">Size:18 x 14 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="kichild">
+                <div class="kipic">
+                    <img src="./Iship imgs/islandkit.jpg" alt=""
+                        onclick="openModal(this, 'Spacious island modular kitchen')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="kitext">Spacious island modular kitchen</div>
+                <div class="size">Size:20 x 20 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="kichild">
+                <div class="kipic">
+                    <img src="./Iship imgs/Ikit7.webp" alt=""
+                        onclick="openModal(this, 'Comfortably Seatable island kitchen')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="kitext">Comfortably Seatable island kitchen</div>
+                <div class="size">Size:12 x 16 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="kichild">
+                <div class="kipic">
+                    <img src="./Iship imgs/Ikit6.jpg" alt=""
+                        onclick="openModal(this, 'Seatable island kitchen')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="kitext">Seatable island kitchen</div>
+                <div class="size">Size:12 x 16 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <img id="img01" class="modal-img">
+            <div class="modal-text" id="caption">
+                <p id="modalDescription"></p>
+                <p id="modalDetails"></p>
+                <button id="modalButton" type="button" onclick="orderNow()">Order Now</button>
+            </div>
+            <span class="close" onclick="closeModal()" aria-label="Close Modal">&times;</span>
+        </div>
+    </div>
+    <script src="kits.js"></script>
+</body>
+
+</html>

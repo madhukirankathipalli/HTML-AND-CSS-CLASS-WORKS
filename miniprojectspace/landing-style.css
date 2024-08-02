@@ -1,0 +1,109 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #333; */
+    font-family: 'Arial', sans-serif;
+    background: url(./indexbg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.landing-container {
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+   
+}
+
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.letter {
+    opacity: 0;
+    animation: moveIn 1.5s forwards;
+    font-weight: bold;
+    padding: 0 5px;font-family: inter;
+}
+
+.letter.space {
+    width: 1px; 
+    margin-right: 15px; 
+}
+
+@keyframes moveInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.letter:nth-child(odd) {
+    animation-name: moveInFromTop;
+}
+
+.letter:nth-child(even) {
+    animation-name: moveInFromBottom;
+}
+
+@media (min-width: 1200px) {
+    .letter {
+        font-size:3rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .letter {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .letter {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .letter {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .letter {
+        font-size: 2rem;
+    }
+}  @font-face {
+    font-family: inter;
+    src: url(./ds-serenity-demo/Rockybilly.ttf);
+}

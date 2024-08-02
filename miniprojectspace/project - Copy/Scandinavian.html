@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scnimalist living room</title>
+    <link rel="stylesheet" href="scadinavian.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div id="scparent">
+        <div id="scpart1">
+            <div class="scchild">
+                <div class="scpic">
+                    <img src="./Iship imgs/scwhite1.jpg" alt=""
+                        onclick="openModal(this, 'Basic Scandinavian design')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="sctext">Basic Scandinavian design</div>
+                <div class="size"> Size:16 x 20 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="scchild">
+                <div class="scpic">
+                    <img src="./Iship imgs/Scrustic2.jpg" alt=""
+                        onclick="openModal(this, 'rustic living room')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="sctext">Rustic Scandinavian living room</div>
+                <div class="size">Size:18 x 15 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="scchild">
+                <div class="scpic">
+                    <img src="./Iship imgs/Scboho.jpg" alt=""
+                        onclick="openModal(this, 'Scandinavian boho living room')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="sctext">Scandinavian Living Room</div>
+                <div class="size">Size:14 x 12 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="scchild">
+                <div class="scpic">
+                    <img src="./Iship imgs/sc4.jpg" alt=""
+                        onclick="openModal(this, 'Light Scandinavian')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="sctext">Light Scandinavian living room</div>
+                <div class="size">Size:13 x 13 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+        <div id="scpart2">
+            <div class="scchild">
+                <div class="scpic">
+                    <img src="./Iship imgs/sc5.jpg" alt=""
+                        onclick="openModal(this, 'Curtain')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="sctext">Scandinavian Living Room With Beautiful Curtains</div>
+                <div class="size">Size:18 x 14 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="scchild">
+                <div class="scpic">
+                    <img src="./Iship imgs/sc6.jpg" alt=""
+                        onclick="openModal(this, 'Green living room')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="sctext">Green living room</div>
+                <div class="size">Size:20 x 20 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="scchild">
+                <div class="scpic">
+                    <img src="./Iship imgs/sc7.jpg" alt=""
+                        onclick="openModal(this, 'Cozy')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="sctext">Cozy style scandinavian living room</div>
+                <div class="size">Size:12 x 16 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="scchild">
+                <div class="scpic">
+                    <img src="./Iship imgs/sc8.jpg" alt=""
+                        onclick="openModal(this, 'Wooden design')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="sctext">Wooden design living room</div>
+                <div class="size">Size:12 x 16 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <img id="img01" class="modal-img">
+            <div class="modal-text" id="caption">
+                <p id="modalDescription"></p>
+                <p id="modalDetails"></p>
+                <button id="modalButton" type="button" onclick="orderNow()">Order Now</button>
+            </div>
+            <span class="close" onclick="closeModal()" aria-label="Close Modal">&times;</span>
+        </div>
+    </div>
+    <script src="scand.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U-shaped Modular Kitchen</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="U-shaped.css"/>
+</head>
+
+<body>
+    <div id="kiparent">
+        <div id="kipart1">
+            <div class="kichild">
+                <div class="kipic">
+                    <img src="./Iship imgs/Usim8.jpg" alt=""
+                        onclick="openModal(this, 'Basic')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="kitext">Basic U-shaped Kitchen</div>
+                <div class="size"> Size:16 x 20 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="kichild">
+                <div class="kipic">
+                    <img src="./Iship imgs/Umodern1.jpg" alt=""
+                        onclick="openModal(this, 'Modern kitchen design')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="kitext">Modern U-shaped kitchen design</div>
+                <div class="size">Size:18 x 15 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="kichild">
+                <div class="kipic">
+                    <img src="./Iship imgs/Ucomvib2.jpg" alt=""
+                        onclick="openModal(this, 'Compact U-Shaped kitchen')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="kitext">Compact and vibrant U-Shaped kitchen</div>
+                <div class="size">Size:14 x 12 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="kichild">
+                <div class="kipic">
+                    <img src="./Iship imgs/Ultramod3.jpg" alt=""
+                        onclick="openModal(this, 'Ultra modern design')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="kitext">Ultra modern design</div>
+                <div class="size">Size:13 x 13 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+        <div id="kipart2">
+            <div class="kichild">
+                <div class="kipic">
+                    <img src="./Iship imgs/Umod4.jpg" alt=""
+                        onclick="openModal(this, 'Modern U-shaped')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="kitext">Modern U-shaped kitchen design</div>
+                <div class="size">Size:18 x 14 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="kichild">
+                <div class="kipic">
+                    <img src="./Iship imgs/Umosmall5.jpg" alt=""
+                        onclick="openModal(this, 'Small U-shaped design')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="kitext">Small U-shaped kitchen design</div>
+                <div class="size">Size:20 x 20 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="kichild">
+                <div class="kipic">
+                    <img src="./Iship imgs/Upargreen6.jpg" alt=""
+                        onclick="openModal(this, 'Parrot green kitchen design')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="kitext">Parrot green kitchen design</div>
+                <div class="size">Size:12 x 16 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+            <div class="kichild">
+                <div class="kipic">
+                    <img src="./Iship imgs/Ubercool7.jpg" alt=""
+                        onclick="openModal(this, 'Uber cool kitchen')" />
+                    <div class="icon" onclick="toggleIconColor(this)"><i class='bx bx-heart'></i></div>
+                </div>
+                <div class="kitext">Uber cool kitchen design</div>
+                <div class="size">Size:12 x 16 feet</div>
+                <button type="button">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <img id="img01" class="modal-img">
+            <div class="modal-text" id="caption">
+                <p id="modalDescription"></p>
+                <p id="modalDetails"></p>
+                <button id="modalButton" type="button" onclick="orderNow()">Order Now</button>
+            </div>
+            <span class="close" onclick="closeModal()" aria-label="Close Modal">&times;</span>
+        </div>
+    </div>
+    <script src="u-shaped.js"></script>
+</body>
+
+</html>
